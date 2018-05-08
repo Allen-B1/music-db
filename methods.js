@@ -12,5 +12,6 @@ function init() {
 
 function add(name) {
     var database = init.app.database();
-    database.ref("users/")
+    var ref = database.ref("users/").push();
+    ref.set(name);   
 }
