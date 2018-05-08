@@ -13,7 +13,8 @@ var app = (function() {
 
   function add(name) {
       var database = init.app.database();
-      var ref = database.ref("users/").push();
+      var posts = database.ref("posts/");
+      var ref = database.ref("posts/").push();
       ref.set(name);
   }
   
