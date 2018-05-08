@@ -11,11 +11,14 @@ var app = (function() {
     init.app = firebase.initializeApp(config);
   }
 
-  function add(name) {
+  function addSong(name) {
       var database = init.app.database();
-      var posts = database.ref("posts/");
-      var ref = database.ref("posts/").push();
-      ref.set(name);
+      var songlist = database.ref("songs/");
+      var ref = songlist.push();
+      ref.set({
+        name: name
+      });
+      return ref;
   }
   
   return {
