@@ -8,5 +8,6 @@ songdb.init({
 });
 
 document.getElementById("name").addEventListener("input", function() {
+    alert(this.value);
     songdb.add(this.value);
 });
