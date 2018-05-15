@@ -13,13 +13,22 @@ var musicdb = (function() {
    * Returns: id
    */
   function addSong(name /*string*/) {
-    var database = app.database();
-    var songlist = database.ref("songs/");
+    var songlist = app.database().ref("songs/");
     var ref = songlist.push();
     ref.set({
       name: name
     });
     return ref.key;
+  }
+
+  /* get(id: string)
+   *
+   * Returns: Promise that fullfills with data.
+   */
+  function getSong(id /*string*/) {
+    return app.database().ref("songs/" + id).once("value").then(function(data) {
+      return data.val();
+    });
   }
 
   /* Listen for events.
@@ -57,6 +66,7 @@ var musicdb = (function() {
   return {
     init: init,
     add: addSong,
+    get: getSong,
     on: on
   }
 })();
