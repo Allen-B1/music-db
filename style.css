@@ -2,6 +2,7 @@
   padding: 16px;
   font-family: sans-serif;
   border-bottom: 1px solid #DDD;
+  display: block;
 }
 body {
   padding: 0;

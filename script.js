@@ -1,11 +1,4 @@
-musicdb.init({
-    apiKey: "AIzaSyCrjDPPAz0REniPtrs4FzlzPcnwGAKA8yQ",
-    authDomain: "something-8dccd.firebaseapp.com",
-    databaseURL: "https://something-8dccd.firebaseio.com",
-    projectId: "something-8dccd",
-    storageBucket: "something-8dccd.appspot.com",
-    messagingSenderId: "684904810173"
-});
+musicdb.init();
 
 var nameView = document.getElementById("name");
 var addView = document.getElementById("add");
@@ -15,7 +8,8 @@ addView.addEventListener("click", function(e) {
 });
 
 musicdb.on(musicdb.on.NEW, function(id, data) {
-  var div = document.createElement("div");
+  var div = document.createElement("a");
+  div.href = "song.html?" + encodeURI(id);
   div.classList.add("song");
   if(data.name == null)
     data.name = "Untitled";

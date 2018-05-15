@@ -1,0 +1,11 @@
+body {
+  margin: 0; padding: 0;
+}
+#name {
+  background: purple;
+  color: #FFF;
+  font-family: sans-serif;
+  padding: 16px;
+  padding-top: 72px;
+  font-size: 20px;
+}

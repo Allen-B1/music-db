@@ -1,11 +1,18 @@
 var musicdb = (function() {
   var app = null;
 
-  /* init(config: object)
+  /* init()
    * Initializes app
    */ 
-  function init(config) {
-    app = firebase.initializeApp(config);
+  function init() {
+    app = firebase.initializeApp({
+      apiKey: "AIzaSyCrjDPPAz0REniPtrs4FzlzPcnwGAKA8yQ",
+      authDomain: "something-8dccd.firebaseapp.com",
+      databaseURL: "https://something-8dccd.firebaseio.com",
+      projectId: "something-8dccd",
+      storageBucket: "something-8dccd.appspot.com",
+      messagingSenderId: "684904810173"
+    });
   }
 
   /* add(name: string)
