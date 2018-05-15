@@ -1,0 +1,12 @@
+.song {
+  padding: 16px;
+  font-family: sans-serif;
+  border-bottom: 1px solid #DDD;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+#name-box {
+  padding: 16px;
+}
