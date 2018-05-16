@@ -2,12 +2,17 @@
 <html lang="en">
   <head>
     <title>Music</title>
-    <link rel="stylesheet" href="song.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta name="theme-color" content="#9c27b0">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
   </head>
   <body>
-    <div id="name"></div>
+    <div class="toolbar-large" style="background:#9c27b0">
+      <a href="index.html" class="icon material-icons">&#xe5c4;</a>
+      <span class="title" id="name"></span>
+    </div>
     <audio style="display:none;margin:16px;" controls="controls" id="audio"></audio>
 
     <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>

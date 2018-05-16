@@ -1,20 +1,46 @@
-.song {
-  padding: 16px;
-  font-family: sans-serif;
-  border-bottom: 1px solid #DDD;
-  display: block;
-}
 body {
   padding: 0;
   margin: 0;
 }
-#name-box {
-  padding: 16px;
-}
-#toolbar {
+
+
+.toolbar, .toolbar-large {
   padding: 16px;
   font-size: 20px;
+  height: 24px;
   font-family: sans-serif;
   background: #2196f3;
   color: #FFF;
+}
+
+.toolbar .icon, .toolbar-large .icon {
+  color: #FFF;
+  text-decoration: none;
+  outline: 0;
+}
+
+.toolbar-large {
+  position: relative;
+  height: 96px;
+}
+
+.toolbar-large .title {
+  position: absolute;
+  bottom: 16px;
+  left: 72px;
+}
+
+.song {
+  padding: 16px;
+  font-family: sans-serif;
+  display: block; 
+  text-decoration: none;
+  outline: 0;
+}
+.song:hover, .song:focus {
+  background: #EEE;
+}
+
+#name-box {
+  padding: 16px;
 }
