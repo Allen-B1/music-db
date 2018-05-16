@@ -17,7 +17,7 @@ if(id) {
     if(data) {
       var audioView = document.getElementById("audio");
       audioView.src = data;
-      audioView.style.display = 'block';
+      document.getElementById("audio-box").style.display = 'block';
     }
   });
 }

@@ -1,14 +1,21 @@
 body {
   padding: 0;
   margin: 0;
+  font-size: 15px;
+  font-family: sans-serif;
 }
 
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+p { margin-top: 0; }
 
 .toolbar, .toolbar-large {
   padding: 16px;
-  font-size: 20px;
   height: 24px;
-  font-family: sans-serif;
   background: #2196f3;
   color: #FFF;
 }
@@ -17,6 +24,12 @@ body {
   color: #FFF;
   text-decoration: none;
   outline: 0;
+}
+
+.toolbar .title, .toolbar-large .title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .toolbar-large {
@@ -30,17 +43,17 @@ body {
   left: 72px;
 }
 
+.section {
+  padding: 16px;
+  display: block;
+}
+
 .song {
   padding: 16px;
-  font-family: sans-serif;
   display: block; 
   text-decoration: none;
   outline: 0;
 }
 .song:hover, .song:focus {
   background: #EEE;
-}
-
-#name-box {
-  padding: 16px;
 }
