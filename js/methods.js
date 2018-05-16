@@ -17,14 +17,16 @@ var musicdb = (function() {
 
   // TODO: add "audio" field
   function addSong(name /*string*/, audio /*string*/) {
-    var songlist = app.database().ref("songs/");
+    var database = app.database();
+    var songlist = database.ref("songs/");
+    var audiolist = database.ref("audio/");
     var ref = songlist.push();
-    var obj = {};
-    obj.name = name || "Untitled";
+    ref.set({name:name || "Untitled"});
     if(audio) {
-      obj.audio = audio;
+      var obj = {};
+      obj[ref.key] = audio;
+      audiolist.update(obj);
     }
-    ref.set(obj);
     return ref;
   }
 
@@ -55,6 +57,16 @@ var musicdb = (function() {
    */
   function getSong(id /*string*/) {
     return app.database().ref("songs/" + id).once("value").then(function(data) {
+      return data.val();
+    });
+  }
+
+  /* getAudio(id: string)
+   *
+   * Returns: Promise that fullfills with the audio link
+   */
+  function getAudio(id /*string*/) {
+    return app.database().ref("audio/" + id).once("value").then(function(data) {
       return data.val();
     });
   }
@@ -96,6 +108,7 @@ var musicdb = (function() {
     add: add,
     addSonata: addSonata,
     get: getSong,
+    getAudio: getAudio,
     on: on
   }
 })();
