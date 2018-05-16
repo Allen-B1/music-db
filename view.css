@@ -1,0 +1,14 @@
+#content {
+  flex-grow: 1;
+}
+main {
+  display: flex !important;
+  flex-direction: row;
+}
+
+#audio-box {
+  display:none;width:300px;background:#EEE;
+}
+#audio-box audio {
+  width:100%;
+}
