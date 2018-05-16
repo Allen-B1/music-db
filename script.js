@@ -9,7 +9,7 @@ addView.addEventListener("click", function(e) {
 
 musicdb.on(musicdb.on.NEW, function(id, data) {
   var div = document.createElement("a");
-  div.href = "song.html?" + encodeURI(id);
+  div.href = "view.html?" + encodeURI(id);
   div.classList.add("song");
   if(data.name == null)
     data.name = "Untitled";
