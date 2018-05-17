@@ -1,6 +1,9 @@
 body {
   padding: 0;
   margin: 0;
+}
+
+.textfield, body {
   font-size: 15px;
   font-family: sans-serif;
 }
@@ -73,10 +76,16 @@ button {
   color: #2196f3;
   background: transparent;
   border-radius: 2px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 button:hover, button:focus {
   background: rgba(0,0,0,0.125);
 }
 button:active {
   background: rgba(0,0,0,0.2);
+}
+button:disabled {
+  color: #AAA;
 }
