@@ -12,3 +12,10 @@ main {
 #audio-box audio {
   width:100%;
 }
+
+
+@media screen and (max-width: 600dp) {
+  main {
+    flex-direction: column;
+  }
+}
