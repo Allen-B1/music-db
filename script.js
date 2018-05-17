@@ -14,5 +14,5 @@ musicdb.on(musicdb.on.NEW, function(id, data) {
   if(data.name == null)
     data.name = "Untitled";
   div.appendChild(document.createTextNode(data.name));
-  document.body.appendChild(div);
+  document.getElementById("content").appendChild(div);
 });
