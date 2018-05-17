@@ -3,9 +3,14 @@ body {
   margin: 0;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .textfield, body {
   font-size: 15px;
   font-family: sans-serif;
+  color: #000;
 }
 
 h2 {
@@ -51,13 +56,14 @@ p { margin-top: 0; }
   display: block;
 }
 
-.song {
+.list-item {
+  color: #000;
   padding: 16px;
   display: block; 
   text-decoration: none;
   outline: 0;
 }
-.song:hover, .song:focus {
+.list-item:hover, .list-item:focus {
   background: #EEE;
 }
 
@@ -65,6 +71,7 @@ p { margin-top: 0; }
   border: 0;
   border-bottom: 1px solid #888;
   outline: 0;
+  padding: 0;
 }
 .textfield:focus, .textfield:active {
   border-bottom: 2px solid #2196f3;

@@ -16,12 +16,12 @@ var musicdb = (function() {
   }
 
   // TODO: add "audio" field
-  function addSong(name /*string*/, audio /*string*/) {
+  function addSong(obj /*object*/, audio /*string*/) {
     var database = app.database();
     var songlist = database.ref("songs/");
     var audiolist = database.ref("audio/");
     var ref = songlist.push();
-    ref.set({name:name || "Untitled"});
+    ref.set(obj);
     if(audio) {
       var obj = {};
       obj[ref.key] = audio;
@@ -30,12 +30,16 @@ var musicdb = (function() {
     return ref;
   }
 
-  /* add(name: string)
+  /* add(name: string, composer: string)
    *
    * Returns: id
    */
-  function add(name, audio) {
-    return addSong(name, audio).key;
+  function add(name, composer, audio) {
+    var obj = {name:name || null};
+    if(composer) {
+      obj.composer = composer;
+    }
+    return addSong(obj, audio).key;
   }
 
   /* add(nickname: string, no: number)
@@ -43,12 +47,11 @@ var musicdb = (function() {
    */
   function addSonata(nickname, num, audio) {
     num = num | 0;
-    var ref = addSong("Sonata No. " + num + ' "' + nickname + '"', audio);
-    ref.update({
+    return addSong({
       num: num,
-      nick: nickname
-    });
-    return ref.key;
+      nick: nickname,
+      name: "Sonata No. " + num + ' "' + nickname + '"',
+      composer: "Beethoven"}, audio).key;
   }
 
   /* get(id: string)
