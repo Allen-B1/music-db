@@ -28,7 +28,7 @@ if(id) {
       var audioBox = document.getElementById("audio-box");
       for(var i = 0; i < data.length; i++) {
         var audioView = document.createElement("audio");
-        audioView.src = data;
+        audioView.src = data[i];
         audioView.controls = true;
         audioBox.appendChild(audioView);
       }
