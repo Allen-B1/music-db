@@ -74,8 +74,8 @@ var musicdb = (function() {
       var arr = [];
       if(typeof val === "string") {
         arr = [val];
-      } else if(val instanceof Array) {
-        arr = val;
+      } else if(typeof val === "object" && val instanceof Object) {
+        arr = Object.values(val);
       }
       return arr;
     });
