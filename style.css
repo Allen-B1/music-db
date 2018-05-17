@@ -57,3 +57,11 @@ p { margin-top: 0; }
 .song:hover, .song:focus {
   background: #EEE;
 }
+
+.textfield {
+  border: 0;
+  border-bottom: 1px solid #888;
+}
+.textfield:focus, .textfield:active {
+  border-bottom: 2px solid #2196f3;
+}
