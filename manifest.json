@@ -1,0 +1,8 @@
+{
+  "name": "Music", 
+  "description": "A database of classical music.",
+  "display": "standalone",
+  "background": "#fafafa",
+  "theme_color": "#2196f3",
+  "start_url": "/music-db/index.html"
+}
