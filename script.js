@@ -16,5 +16,8 @@ musicdb.on(musicdb.on.NEW, function(id, data) {
   if(data.name == null)
     data.name = "Untitled";
   div.appendChild(document.createTextNode(data.name));
-  document.getElementById("content").appendChild(div);
+
+  var content = document.getElementById(data.composer === "Beethoven" ? "beethoven-content" : "content");
+  content.style.display = "block";
+  content.appendChild(div);
 });
