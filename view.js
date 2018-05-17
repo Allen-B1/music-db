@@ -24,10 +24,15 @@ if(id) {
   });
   
   musicdb.getAudio(id).then(function(data) {
-    if(data) {
-      var audioView = document.getElementById("audio");
-      audioView.src = data;
-      document.getElementById("audio-box").style.display = 'block';
+    if(data.length) {
+      var audioBox = document.getElementById("audio-box");
+      for(var i = 0; i < data.length; i++) {
+        var audioView = document.createElement("audio");
+        audioView.src = data;
+        audioView.controls = true;
+        audioBox.appendChild(audioView);
+      }
+      audioBox.style.display = 'block';
     }
   });
 }

@@ -66,11 +66,18 @@ var musicdb = (function() {
 
   /* getAudio(id: string)
    *
-   * Returns: Promise that fullfills with the audio link
+   * Returns: Promise that fullfills with an array of the audio link(s). Returns empty array if no audio.
    */
   function getAudio(id /*string*/) {
     return app.database().ref("audio/" + id).once("value").then(function(data) {
-      return data.val();
+      var val = data.val();
+      var arr = [];
+      if(typeof val === "string") {
+        arr = [val];
+      } else if(val instanceof Array) {
+        arr = val;
+      }
+      return arr;
     });
   }
 
