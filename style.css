@@ -61,7 +61,22 @@ p { margin-top: 0; }
 .textfield {
   border: 0;
   border-bottom: 1px solid #888;
+  outline: 0;
 }
 .textfield:focus, .textfield:active {
   border-bottom: 2px solid #2196f3;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  color: #2196f3;
+  background: transparent;
+  border-radius: 2px;
+}
+button:hover, button:focus {
+  background: rgba(0,0,0,0.125);
+}
+button:active {
+  background: rgba(0,0,0,0.2);
 }
