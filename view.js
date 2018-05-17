@@ -9,6 +9,16 @@ if(id) {
         var nameView = document.getElementById("name");
         nameView.innerHTML = "";
         nameView.appendChild(document.createTextNode(data.name));
+        
+      }
+      if(data.composer != null) {
+        var aboutView = document.getElementById("description");
+        aboutView.innerHTML = "";
+        var composedBy = document.createElement("span");
+        composedBy.innerHTML = "Composed by ";
+        composedBy.style.color = "#888";
+        aboutView.appendChild(composedBy);
+        aboutView.appendChild(document.createTextNode(data.composer));
       }
     }
   });
