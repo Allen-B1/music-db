@@ -14,7 +14,7 @@ main {
 }
 
 
-@media screen and (max-width: 600dp) {
+@media screen and (max-width: 600px) {
   main {
     flex-direction: column;
   }
