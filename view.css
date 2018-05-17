@@ -1,5 +1,6 @@
 #content {
   flex-grow: 1;
+  padding: 16px;
 }
 main {
   display: flex !important;
@@ -8,6 +9,7 @@ main {
 
 #audio-box {
   display:none;width:300px;background:#EEE;
+  margin: 16px;
 }
 #audio-box audio {
   width:100%;
@@ -17,5 +19,8 @@ main {
 @media screen and (max-width: 600px) {
   main {
     flex-direction: column;
+  }
+  #audio-box {
+    margin: 0;
   }
 }
