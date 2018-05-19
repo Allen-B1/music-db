@@ -34,7 +34,7 @@ p { margin-top: 0; }
 }
 
 .toolbar-height { height: 64px; }
-.toolbar-large-height { height: 112px; }
+.toolbar-large-height { height: 136px; }
 
 .toolbar .icon, .toolbar-large .icon {
   color: #FFF;
@@ -49,7 +49,7 @@ p { margin-top: 0; }
 }
 
 .toolbar-large {
-  height: 72px;
+  height: 96px;
 }
 
 .toolbar-large .title {
@@ -111,7 +111,7 @@ button:disabled {
   margin-right: 24px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:599px) {
   .toolbar, .toolbar-large {
     padding: 16px;
   }
@@ -119,7 +119,7 @@ button:disabled {
     left: 72px;
   }
   .toolbar-height { height: 56px; }
-  .toolbar-large-height { height: 104px; }
+  .toolbar-large-height { height: 128px; }
   .toolbar-large .title {
     bottom: 16px;
   }
