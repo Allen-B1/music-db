@@ -54,7 +54,7 @@ p { margin-top: 0; }
 
 .toolbar-large .title {
   position: absolute;
-  bottom: 16px;
+  bottom: 20px;
   left: 80px;
 }
 
@@ -120,6 +120,9 @@ button:disabled {
   }
   .toolbar-height { height: 56px; }
   .toolbar-large-height { height: 104px; }
+  .toolbar-large .title {
+    bottom: 16px;
+  }
   .section, .list-item {
     padding: 16px;
   }
