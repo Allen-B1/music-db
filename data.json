@@ -2,29 +2,38 @@
   "compositions" : {
     "beethoven-sonata-1" : {
       "composer" : "Beethoven",
-      "name" : "Sonata No. 1"
+      "type": "sonata",
+      "num": 1
     },
     "beethoven-sonata-3" : {
       "composer" : "Beethoven",
-      "name" : "Sonata No. 3",
+      "type": "sonata",
+      "num": 3,
       "audio": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Beethoven_Sonata_3_movement_1.ogg"
     },
     "beethoven-sonata-4" : {
       "composer" : "Beethoven",
-      "name" : "Sonata No. 4 \"Grand Sonata\"",
+      "type": "sonata",
+      "num": 4,
+      "nickname": "Grand Sonata",
       "audio": "https://upload.wikimedia.org/wikipedia/commons/2/21/Beethoven_Piano_Sonata_No_4_op_7_-_I_-_Allegro_molto_e_con_brio.ogg"
     },
     "beethoven-sonata-7" : {
       "composer" : "Beethoven",
-      "name" : "Sonata No. 7"
+      "type": "sonata",
+      "num": 7
     },
     "beethoven-sonata-8" : {
       "composer" : "Beethoven",
-      "name" : "Sonata No. 8 \"Pathétique\""
+      "type": "sonata",
+      "num": 8,
+      "nickname" : "Pathétique"
     },
     "beethoven-sonata-14" : {
       "composer" : "Beethoven",
-      "name" : "Sonata No. 14 \"Moonlight\"",
+      "type": "sonata",
+      "num": 14,
+      "nickname" : "Moonlight",
       "audio": [
         "https://upload.wikimedia.org/wikipedia/commons/e/eb/Beethoven_Moonlight_1st_movement.ogg",
         "https://upload.wikimedia.org/wikipedia/commons/4/47/Beethoven_Moonlight_2nd_movement.ogg",
@@ -33,7 +42,9 @@
     },
     "beethoven-sonata-15" : {
       "composer" : "Beethoven",
-      "name" : "Sonata No. 15 \"Pastorale\"",
+      "type": "sonata",
+      "num": 15,
+      "nickname" : "Pastorale",
       "audio" : [
         "https://upload.wikimedia.org/wikipedia/commons/5/54/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_i._allegro.ogg",
         "https://upload.wikimedia.org/wikipedia/commons/4/49/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_ii._andante.ogg",

@@ -47,6 +47,15 @@ var musicdb = (function() {
         if(typeof ret.audio === "string") {
           ret.audio = [ret.audio];
         }
+        if(ret.type === "sonata" && !ret.name) {
+          ret.name = "Piano Sonata";
+          if(typeof ret.num === "number") {
+            ret.name += " No. " + ret.num;
+          }
+          if(ret.nickname != null) {
+            ret.name += ' "' + ret.nickname + '"';
+          }
+        }
         return ret;
       });
     else
@@ -85,9 +94,12 @@ var musicdb = (function() {
    * Returns a Promise that fullfills with list of compositions with their IDs
    */
   function list() {
-    return promise.then(function(data) {
-      return Object.keys(data.compositions);
-    });
+    if(promise != null)
+      return promise.then(function(data) {
+        return Object.keys(data.compositions);
+      });
+    else
+      return Promise.reject("musicdb.init() not called");
   }
   
   return {
