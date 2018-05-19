@@ -4,17 +4,17 @@
   "display": "standalone",
   "background": "#fafafa",
   "theme_color": "#2196f3",
-  "start_url": "/music-db/index.html",
+  "start_url": "index.html",
   "icons": [{
-    "src": "/music-db/images/icon_192.png",
+    "src": "images/icon_192.png",
     "sizes": "192x192",
     "type":"image/png"
   },{
-    "src": "/music-db/images/icon_144.png",
+    "src": "images/icon_144.png",
     "sizes": "144x144",
     "type":"image/png"
   },{
-    "src": "/music-db/images/icon_96.png",
+    "src": "images/icon_96.png",
     "sizes": "96x96",
     "type":"image/png"
   }]
