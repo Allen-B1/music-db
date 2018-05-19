@@ -111,7 +111,7 @@ button:disabled {
   margin-right: 24px;
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px) {
   .toolbar, .toolbar-large {
     padding: 16px;
   }
