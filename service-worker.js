@@ -1,4 +1,4 @@
-var filesToCache = [];
+var filesToCache = ["index.html", "view.html"];
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
