@@ -1,6 +1,5 @@
 #content {
   flex-grow: 1;
-  padding: 16px;
   order: 0;
 }
 main {
@@ -10,7 +9,7 @@ main {
 
 #audio-box {
   display:none;width:300px;background:#EEE;
-  margin: 16px;
+  margin: 24px;
   order: 1;
 }
 #audio-box audio {
