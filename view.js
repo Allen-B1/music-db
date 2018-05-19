@@ -20,19 +20,16 @@ if(id) {
         aboutView.appendChild(composedBy);
         aboutView.appendChild(document.createTextNode(data.composer));
       }
-    }
-  });
-  
-  musicdb.getAudio(id).then(function(data) {
-    if(data.length) {
-      var audioBox = document.getElementById("audio-box");
-      for(var i = 0; i < data.length; i++) {
-        var audioView = document.createElement("audio");
-        audioView.src = data[i];
-        audioView.controls = true;
-        audioBox.appendChild(audioView);
+      if(data.audio != null && data.audio.length) {
+        var audioBox = document.getElementById("audio-box");
+        for(var i = 0; i < data.audio.length; i++) {
+          var audioView = document.createElement("audio");
+          audioView.src = data.audio[i];
+          audioView.controls = true;
+          audioBox.appendChild(audioView);
+        }
+        audioBox.style.display = 'block';
       }
-      audioBox.style.display = 'block';
     }
   });
 }

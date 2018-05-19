@@ -1,0 +1,45 @@
+{
+  "compositions" : {
+    "beethoven-sonata-1" : {
+      "composer" : "Beethoven",
+      "name" : "Sonata No. 1"
+    },
+    "beethoven-sonata-3" : {
+      "composer" : "Beethoven",
+      "name" : "Sonata No. 3",
+      "audio": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Beethoven_Sonata_3_movement_1.ogg"
+    },
+    "beethoven-sonata-4" : {
+      "composer" : "Beethoven",
+      "name" : "Sonata No. 4 \"Grand Sonata\"",
+      "audio": "https://upload.wikimedia.org/wikipedia/commons/2/21/Beethoven_Piano_Sonata_No_4_op_7_-_I_-_Allegro_molto_e_con_brio.ogg"
+    },
+    "beethoven-sonata-7" : {
+      "composer" : "Beethoven",
+      "name" : "Sonata No. 7"
+    },
+    "beethoven-sonata-8" : {
+      "composer" : "Beethoven",
+      "name" : "Sonata No. 8 \"Pathétique\""
+    },
+    "beethoven-sonata-14" : {
+      "composer" : "Beethoven",
+      "name" : "Sonata No. 14 \"Moonlight\"",
+      "audio": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Beethoven_Moonlight_1st_movement.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/Beethoven_Moonlight_2nd_movement.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Beethoven_Moonlight_3rd_movement.ogg"
+      ]
+    },
+    "beethoven-sonata-15" : {
+      "composer" : "Beethoven",
+      "name" : "Sonata No. 15 \"Pastorale\"",
+      "audio" : [
+        "https://upload.wikimedia.org/wikipedia/commons/5/54/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_i._allegro.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/49/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_ii._andante.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_iii._scherzo._allegro_vivace.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_iv._rondo._allegro%2C_ma_non_troppo.ogg"
+      ]
+    }
+  }
+}

@@ -1,33 +1,24 @@
 var musicdb = (function() {
-  var app = null;
+  var promise = null;
 
   /* init()
    * Initializes app
    */ 
   function init() {
-    app = firebase.initializeApp({
-      apiKey: "AIzaSyCrjDPPAz0REniPtrs4FzlzPcnwGAKA8yQ",
-      authDomain: "something-8dccd.firebaseapp.com",
-      databaseURL: "https://something-8dccd.firebaseio.com",
-      projectId: "something-8dccd",
-      storageBucket: "something-8dccd.appspot.com",
-      messagingSenderId: "684904810173"
+    promise = new Promise(function(resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (this.readyState === XMLHttpRequest.DONE){
+          if(this.status === 200)
+            resolve(JSON.parse(this.responseText));
+          else
+            reject(this.status);
+        }
+      };
+      xhr.responseType = "text";
+      xhr.open("GET", "data.json");
+      xhr.send(null);
     });
-  }
-
-  // TODO: add "audio" field
-  function addSong(obj /*object*/, audio /*string*/) {
-    var database = app.database();
-    var songlist = database.ref("songs/");
-    var audiolist = database.ref("audio/");
-    var ref = songlist.push();
-    ref.set(obj);
-    if(audio) {
-      var obj = {};
-      obj[ref.key] = audio;
-      audiolist.update(obj);
-    }
-    return ref;
   }
 
   /* add(name: string, composer: string)
@@ -35,50 +26,31 @@ var musicdb = (function() {
    * Returns: id
    */
   function add(name, composer, audio) {
-    var obj = {name:name || null};
-    if(composer) {
-      obj.composer = composer;
-    }
-    return addSong(obj, audio).key;
+    throw new Error("Unsupported operation");
   }
 
   /* add(nickname: string, no: number)
    * Add a B. sonata 
    */
   function addSonata(nickname, num, audio) {
-    num = num | 0;
-    return addSong({
-      num: num,
-      nick: nickname,
-      name: "Sonata No. " + num + ' "' + nickname + '"',
-      composer: "Beethoven"}, audio).key;
+    throw new Error("Unsupported operation");
   }
 
   /* get(id: string)
    *
    * Returns: Promise that fullfills with data.
    */
-  function getSong(id /*string*/) {
-    return app.database().ref("songs/" + id).once("value").then(function(data) {
-      return data.val();
-    });
-  }
-
-  /* getAudio(id: string)
-   *
-   * Returns: Promise that fullfills with an array of the audio link(s). Returns empty array if no audio.
-   */
-  function getAudio(id /*string*/) {
-    return app.database().ref("audio/" + id).once("value").then(function(data) {
-      var val = data.val();
-      var arr = [];
-      if(typeof val === "string") {
-        arr = [val];
-      } else if(typeof val === "object" && val instanceof Object) {
-        arr = Object.values(val);
-      }
-      return arr;
-    });
+  function get(id /*string*/) {
+    if(promise != null)
+      return promise.then(function(data) {
+        var ret = data.compositions[id];
+        if(typeof ret.audio === "string") {
+          ret.audio = [ret.audio];
+        }
+        return ret;
+      });
+    else
+      return Promise.reject("musicdb.init() not called");
   }
 
   /* Listen for events.
@@ -88,22 +60,16 @@ var musicdb = (function() {
    *    listener - should be in the form of (id, data) -> {...}
    */
   function on(event, listener) {
-    var songlist = app.database().ref("songs/");
     switch(event) {
+      case on.ERROR:
+        if(promise != null)
+          promise.catch(listener);
+        else
+          throw new Error("musicdb.init() not called");
       case on.NEW:
-        songlist.on("child_added", function(data) {
-          listener(data.key, data.val());
-        });
-        break;
       case on.CHANGE:
-        songlist.on("child_changed", function(data) {
-          listener(data.key, data.val());
-        });
-        break;
       case on.REMOVE:
-        songlist.on("child_removed", function(data) {
-          listener(data.key, data.val());
-        });
+        console.warn("Events deprecreated");
         break;
       default:
         throw new TypeError("Event " + event + " is not a valid event.")
@@ -112,13 +78,24 @@ var musicdb = (function() {
   on.NEW = "new_song";
   on.CHANGE = "song_updated";
   on.REMOVE = "song_removed";
+  on.ERROR  = "error";
+
+  /* List compositions
+   *
+   * Returns a Promise that fullfills with list of compositions with their IDs
+   */
+  function list() {
+    return promise.then(function(data) {
+      return Object.keys(data.compositions);
+    });
+  }
   
   return {
     init: init,
     add: add,
     addSonata: addSonata,
-    get: getSong,
-    getAudio: getAudio,
-    on: on
+    get: get,
+    on: on,
+    list: list
   }
 })();
