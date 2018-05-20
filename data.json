@@ -27,7 +27,12 @@
       "composer" : "Beethoven",
       "type": "sonata",
       "num": 8,
-      "nickname" : "Pathétique"
+      "nickname" : "Pathétique",
+      "audio": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/26/Beethoven%2C_Sonata_No._8_in_C_Minor_Pathetique%2C_Op._13_-_I._Grave_-_Allegro_di_molto_e_con_brio.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/6/63/Beethoven%2C_Sonata_No._8_in_C_Minor_Pathetique%2C_Op._13_-_II._Adagio_cantabile.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/87/Beethoven%2C_Sonata_No._8_in_C_Minor_Pathetique%2C_Op._13_-_III._Rondo_-_Allegro.ogg"
+      ]
     },
     "beethoven-sonata-14" : {
       "composer" : "Beethoven",
