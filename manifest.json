@@ -2,7 +2,7 @@
   "name": "Music", 
   "description": "A database of classical music.",
   "display": "standalone",
-  "background": "#fafafa",
+  "background_color": "#fafafa",
   "theme_color": "#2196f3",
   "start_url": "index.html",
   "icons": [{
