@@ -24,7 +24,10 @@
     "beethoven-sonata-7" : {
       "composer" : "Beethoven",
       "type": "sonata",
-      "num": 7
+      "num": 7,
+      "audio": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Piano_Sonata_No._7_%28Beethoven%29%2C_First_Movement.ogg",
+      "audio_credits": "Created by La Pianista. Licensed under CC BY 3.0",
+      "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Piano_Sonata_No._7_(Beethoven),_First_Movement.ogg"
     },
     "beethoven-sonata-8" : {
       "composer" : "Beethoven",
