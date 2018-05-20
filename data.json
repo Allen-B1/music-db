@@ -10,7 +10,7 @@
       "type": "sonata",
       "num": 3,
       "audio": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Beethoven_Sonata_3_movement_1.ogg",
-      "audio_credits": "Uploaded by UninvitedCompany. Licensed under CC BY 2.5",
+      "audio_credits": "Uploaded by UninvitedCompany. Licensed under CC BY 2.5.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Beethoven_Sonata_3_movement_1.ogg"
     },
     "beethoven-sonata-4" : {
@@ -19,6 +19,7 @@
       "num": 4,
       "nickname": "Grand Sonata",
       "audio": "https://upload.wikimedia.org/wikipedia/commons/2/21/Beethoven_Piano_Sonata_No_4_op_7_-_I_-_Allegro_molto_e_con_brio.ogg",
+      "audio_credits": "Licensed under CC BY-SA 2.0.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Beethoven_Piano_Sonata_No_4_op_7_-_I_-_Allegro_molto_e_con_brio.ogg"
     },
     "beethoven-sonata-7" : {
@@ -26,7 +27,7 @@
       "type": "sonata",
       "num": 7,
       "audio": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Piano_Sonata_No._7_%28Beethoven%29%2C_First_Movement.ogg",
-      "audio_credits": "Created by La Pianista. Licensed under CC BY 3.0",
+      "audio_credits": "Created by La Pianista. Licensed under CC BY 3.0.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Piano_Sonata_No._7_(Beethoven),_First_Movement.ogg"
     },
     "beethoven-sonata-8" : {
