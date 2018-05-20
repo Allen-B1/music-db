@@ -8,9 +8,11 @@ main {
 }
 
 #audio-box {
-  display:none;width:300px;background:#EEE;
+  display:none;
+  background:#EEE;
   margin: 24px;
   order: 1;
+  min-width: 240px;
 }
 #audio-box audio {
   width:100%;
