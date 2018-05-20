@@ -26,8 +26,11 @@ self.addEventListener('fetch', function(e) {
     console.log('[Service Worker] Fetching ui');
     /* Get cache or network if not cached */
     e.respondWith(
-      caches.match(e.request).then(function(response) {
-        return response || fetch(e.request);
+      caches.open("musicData").then(function(cache) {
+        return fetch(e.request).then(function(response){
+          cache.put(e.request.url, response.clone());
+          return response;
+        });
       })
     );
   }

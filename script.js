@@ -1,16 +1,27 @@
 musicdb.init();
 musicdb.list().then(function(list) {
   list.forEach(function(id) {
-    var div = document.createElement("a");
-    div.href = "view.html?" + encodeURI(id);
-    div.classList.add("list-item");
     musicdb.get(id).then(function(data) {
-      if(data.name == null)
-        data.name = "Untitled";
-      div.appendChild(document.createTextNode(data.name));
-      var content = document.getElementById(data.composer === "Beethoven" ? "beethoven-content" : "content");
-      content.style.display = "block";
-      content.appendChild(div);
+      var div = document.createElement("a");
+      div.href = "view.html?" + encodeURI(id);
+
+      if(data.type === "sonata" && data.composer === "Beethoven") {
+        div.classList.add("composition");
+        div.appendChild(document.createTextNode(data.num | 0));
+
+        var content = document.getElementById("beethoven-sonata-content");
+        content.parentNode.style.display = "block";
+        content.appendChild(div);
+      } else {
+        if(data.name == null)
+          data.name = "Untitled";
+        div.appendChild(document.createTextNode(data.name));
+        div.classList.add("list-item");
+
+        var content = document.getElementById("content");
+        content.style.display = "block";
+        content.appendChild(div);
+      }
     });
   });
 });
