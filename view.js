@@ -28,6 +28,20 @@ if(id) {
           audioView.controls = true;
           audioBox.appendChild(audioView);
         }
+        if(data.audio_credits || data.audio_credits_link) {
+          var creditsView = document.createElement("div");
+          creditsView.classList.add("credits");
+          if(data.audio_credits)
+            creditsView.appendChild(document.createTextNode(data.audio_credits + " "));
+          if(data.audio_credits_link) {
+            var link = document.createElement("a");
+            link.href = data.audio_credits_link;
+            link.target = "_blank";
+            link.innerHTML = "Source";
+            creditsView.appendChild(link);
+          }
+          audioBox.appendChild(creditsView);
+        }
         audioBox.style.display = 'block';
       }
     }

@@ -5,7 +5,7 @@
   color: #FFF;
   border-radius: 2px;
   margin-right: 8px;
-  text-decoration: none;
+  text-decoration: none !important;
   outline: 0;
   flex-grow: 1;
   text-align: center;

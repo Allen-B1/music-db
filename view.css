@@ -12,12 +12,16 @@ main {
   background:#EEE;
   margin: 24px;
   order: 1;
-  min-width: 240px;
+  width: 240px;
 }
 #audio-box audio {
   width:100%;
 }
 
+#audio-box .credits {
+  margin-top: 8px;
+  font-size: 12px;
+}
 
 @media screen and (max-width: 720px) {
   main {
