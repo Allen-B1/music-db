@@ -13,6 +13,11 @@
       "audio_credits": "Played by Artur Schnabel around 1935.",
       "audio_credits_link": "https://en.wikipedia.org/wiki/Piano_Sonata_No._1_(Beethoven)#Structure"
     },
+    "beethoven-sonata-2": {
+      "composer": "Beethoven",
+      "type": "sonata",
+      "num": 2
+    },
     "beethoven-sonata-3" : {
       "composer" : "Beethoven",
       "type": "sonata",
@@ -29,6 +34,16 @@
       "audio": "https://upload.wikimedia.org/wikipedia/commons/2/21/Beethoven_Piano_Sonata_No_4_op_7_-_I_-_Allegro_molto_e_con_brio.ogg",
       "audio_credits": "Licensed under CC BY-SA 2.0.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Beethoven_Piano_Sonata_No_4_op_7_-_I_-_Allegro_molto_e_con_brio.ogg"
+    },
+    "beethoven-sonata-5": {
+      "composer": "Beethoven",
+      "type": "sonata",
+      "num": 5,
+      "audio": ["http://piano-midi.de/ogg/beethoven/beethoven_opus10_1.ogg",
+               "http://piano-midi.de/ogg/beethoven/beethoven_opus10_2.ogg",
+               "http://piano-midi.de/ogg/beethoven/beethoven_opus10_3.ogg"],
+      "audio_credits": "Created by Bernd Krueger. Licensed under CC BY-SA.",
+      "audio_credits_link": "http://piano-midi.de/ogg.htm#beethoven"
     },
     "beethoven-sonata-7" : {
       "composer" : "Beethoven",
@@ -62,7 +77,7 @@
         "http://piano-midi.de/ogg/beethoven/mond_3.ogg"
       ],
       "audio_credits": "Created by Bernd Krueger. Licensed under CC BY-SA.",
-      "audio_credits_link": "http://piano-midi.de/ogg.htm"
+      "audio_credits_link": "http://piano-midi.de/ogg.htm#beethoven"
     },
     "beethoven-sonata-15" : {
       "composer" : "Beethoven",
