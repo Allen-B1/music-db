@@ -92,6 +92,19 @@
       ],
       "audio_credits": "Files courtesy of Musopen.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/Ludwig_van_Beethoven#Music"
+    },
+    "beethoven-sonata-21" : {
+      "composer": "Beethoven",
+      "type": "sonata",
+      "num": 21,
+      "nickname": "Waldstein",
+      "audio": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/38/Ludwig_van_Beethoven_-_sonata_no._21_in_c_major_%27waldstein%27%2C_op._53_-_i._allegro_con_br.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/8f/Ludwig_van_Beethoven_-_sonata_%27waldstein%27%2C_op._53_-_ii._introduzione-_adagio_molto.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/85/Ludwig_van_Beethoven_-_sonata_%27waldstein%27%2C_op._53_-_iii._rondo-_allegretto_moderato.ogg"        
+      ],
+      "audio_credits": "Played by Michael Hawley. Files courtesy of Musopen.",
+      "audio_credits_link": "https://commons.wikimedia.org/wiki/Ludwig_van_Beethoven#Music"
     }
   }
 }
