@@ -72,9 +72,9 @@
       "num": 14,
       "nickname" : "Moonlight",
       "audio": [
-        "http://piano-midi.de/ogg/beethoven/mond_1.ogg",
-        "http://piano-midi.de/ogg/beethoven/mond_2.ogg",
-        "http://piano-midi.de/ogg/beethoven/mond_3.ogg"
+        "https://upload.wikimedia.org/wikipedia/commons/e/eb/Beethoven_Moonlight_1st_movement.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/47/Beethoven_Moonlight_2nd_movement.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Beethoven_Moonlight_3rd_movement.ogg"
       ],
       "audio_credits": "Created by Bernd Krueger. Licensed under CC BY-SA.",
       "audio_credits_link": "http://piano-midi.de/ogg.htm#beethoven"
