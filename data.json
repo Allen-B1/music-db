@@ -3,7 +3,20 @@
     "beethoven-sonata-1" : {
       "composer" : "Beethoven",
       "type": "sonata",
-      "num": 1
+      "num": 1,
+      "audio": [
+        "https://upload.wikimedia.org/wikipedia/commons/5/56/Piano_Sonata_N%C2%B0_1_-_1._Allegro_%28Beethoven%2C_Schnabel%29.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/a0/Piano_Sonata_N%C2%B0_1_-_2._Adagio_%28Beethoven%2C_Schnabel%29.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4e/Piano_Sonata_N%C2%B0_1_-_3._Menuetto_and_Trio_%28Beethoven%2C_Schnabel%29.ogg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7d/Piano_Sonata_N%C2%B0_1_-_4._Prestissimo_%28Beethoven%2C_Schnabel%29.ogg"
+      ],
+      "audio_credits": "Played by Artur Schnabel around 1935.",
+      "audio_credits_link": "https://en.wikipedia.org/wiki/Piano_Sonata_No._1_(Beethoven)#Structure"
+    },
+    "beethoven-sonata-2": {
+      "composer": "Beethoven",
+      "type": "sonata",
+      "num": 2
     },
     "beethoven-sonata-3" : {
       "composer" : "Beethoven",
@@ -21,6 +34,16 @@
       "audio": "https://upload.wikimedia.org/wikipedia/commons/2/21/Beethoven_Piano_Sonata_No_4_op_7_-_I_-_Allegro_molto_e_con_brio.ogg",
       "audio_credits": "Licensed under CC BY-SA 2.0.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Beethoven_Piano_Sonata_No_4_op_7_-_I_-_Allegro_molto_e_con_brio.ogg"
+    },
+    "beethoven-sonata-5": {
+      "composer": "Beethoven",
+      "type": "sonata",
+      "num": 5,
+      "audio": ["http://piano-midi.de/ogg/beethoven/beethoven_opus10_1.ogg",
+               "http://piano-midi.de/ogg/beethoven/beethoven_opus10_2.ogg",
+               "http://piano-midi.de/ogg/beethoven/beethoven_opus10_3.ogg"],
+      "audio_credits": "Created by Bernd Krueger. Licensed under CC BY-SA.",
+      "audio_credits_link": "http://piano-midi.de/ogg.htm#beethoven"
     },
     "beethoven-sonata-7" : {
       "composer" : "Beethoven",
@@ -40,8 +63,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/6/63/Beethoven%2C_Sonata_No._8_in_C_Minor_Pathetique%2C_Op._13_-_II._Adagio_cantabile.ogg",
         "https://upload.wikimedia.org/wikipedia/commons/8/87/Beethoven%2C_Sonata_No._8_in_C_Minor_Pathetique%2C_Op._13_-_III._Rondo_-_Allegro.ogg"
       ],
-      "audio_credits": "Played by Paul Pitman. Taken from Museopen.",
-      "audio_credits_link": "https://musopen.org/"
+      "audio_credits": "Played by Paul Pitman. Files are from Wikipedia, courtesy of Musopen.",
+      "audio_credits_link": "https://en.wikipedia.org/wiki/Piano_Sonata_No._8_(Beethoven)#Movements/"
     },
     "beethoven-sonata-14" : {
       "composer" : "Beethoven",
@@ -54,7 +77,7 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/d4/Beethoven_Moonlight_3rd_movement.ogg"
       ],
       "audio_credits": "Created by Bernd Krueger. Licensed under CC BY-SA.",
-      "audio_credits_link": "http://piano-midi.de/ogg.htm"
+      "audio_credits_link": "http://piano-midi.de/ogg.htm#beethoven"
     },
     "beethoven-sonata-15" : {
       "composer" : "Beethoven",
@@ -67,8 +90,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_iii._scherzo._allegro_vivace.ogg",
         "https://upload.wikimedia.org/wikipedia/commons/c/c6/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_iv._rondo._allegro%2C_ma_non_troppo.ogg"
       ],
-      "audio_credits": "Taken from Museopen.",
-      "audio_credits_link": "https://musopen.org/"
+      "audio_credits": "Files courtesy of Musopen.",
+      "audio_credits_link": "https://commons.wikimedia.org/wiki/Ludwig_van_Beethoven#Music"
     }
   }
 }
