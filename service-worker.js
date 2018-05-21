@@ -24,11 +24,18 @@ self.addEventListener('fetch', function(e) {
     );
   } else {
     console.log('[Service Worker] Fetching ui');
+
+    // if url is view.html?piece-id return view.html
+    var url = new URL(e.request.url);
+    if(urlObject.origin === location.origin && urlObject.pathname.endsWith("view.html")) {
+      url.search = "";
+    }
+
     /* Get cache or network if not cached */
     e.respondWith(
       caches.open("musicData").then(function(cache) {
-        return fetch(e.request).then(function(response){
-          cache.put(e.request.url, response.clone());
+        return fetch(url).then(function(response){
+          cache.put(url, response.clone());
           return response;
         });
       })
