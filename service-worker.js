@@ -27,7 +27,7 @@ self.addEventListener('fetch', function(e) {
 
     // if url is view.html?piece-id return view.html
     var url = new URL(e.request.url);
-    if(urlObject.origin === location.origin && urlObject.pathname.endsWith("view.html")) {
+    if(url.origin === location.origin && url.pathname.endsWith("view.html")) {
       url.search = "";
     }
 
