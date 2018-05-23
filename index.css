@@ -1,41 +1,61 @@
 .composition {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 16px;
   background: #9c27b0;
   color: #FFF;
-  border-radius: 2px;
-  margin-right: 8px;
   text-decoration: none !important;
   outline: 0;
-  flex-grow: 1;
   text-align: center;
+  font-size: 16px;
 }
 .composition:hover, .composition:focus {
-  background: #ba68c8;
+  background: #7b1fa2;
 }
 
 .set-title {
-  margin: 24px;
+  margin: 0;
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .set-items {
-  display: flex;
-  overflow: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-gap: 8px;
+  gap: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .set-container {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .set-container {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .set-container {
+    padding-left: 256px;
+    padding-right: 256px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .set-items {
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 
 @media screen and (max-width:600px) {
-  .set-title {
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 16px;
-  }
   .set-items {
-    padding-left: 16px;
-    padding-right: 16px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
