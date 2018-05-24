@@ -117,6 +117,15 @@
       "audio": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Frederic_Chopin_-_Nocturne_Eb_major_Opus_9%2C_number_2.ogg",
       "audio_credits": "Played by Martha Goldstein. Licensed under the CC BY-SA 2.0.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_-_Nocturne_Eb_major_Opus_9,_number_2.ogg"
+    },
+    "chopin-nocturne-3": {
+      "composer": "Chopin",
+      "type": "nocturne",
+      "num": 3,
+      "key": "B",
+      "audio": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Fryderyk_Chopin_-_Nocturne_op._9_n.3_H-dur_-_Patrizia_Prati.ogg",
+      "audio_credits": "Played by Patrizia Prati. Licensed under the CC BY-SA 4.0.",
+      "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Fryderyk_Chopin_-_Nocturne_op._9_n.3_H-dur_-_Patrizia_Prati.ogg"
     }
   }
 }
