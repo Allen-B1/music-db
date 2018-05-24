@@ -12,13 +12,10 @@ if(id) {
         
       }
       if(data.composer != null) {
-        var aboutView = document.getElementById("description");
-        aboutView.innerHTML = "";
-        var composedBy = document.createElement("span");
-        composedBy.innerHTML = "Composed by ";
-        composedBy.style.color = "#888";
-        aboutView.appendChild(composedBy);
-        aboutView.appendChild(document.createTextNode(data.composer));
+        var composerView = document.getElementById("composer");
+        composerView.innerHTML = "";
+        composerView.appendChild(document.createTextNode(data.composer));
+        composerView.parentNode.style.display = "block";
       }
       if(data.audio != null && data.audio.length) {
         var audioBox = document.getElementById("audio-box");
@@ -43,6 +40,13 @@ if(id) {
           audioBox.appendChild(creditsView);
         }
         audioBox.style.display = 'block';
+      }
+
+      if(data.key != null) {     
+        var keyView = document.getElementById("key");
+        keyView.innerHTML = "";
+        keyView.appendChild(document.createTextNode(data.key));
+        keyView.parentNode.style.display = "block";
       }
     }
   });

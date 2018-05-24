@@ -4,6 +4,7 @@
       "composer" : "Beethoven",
       "type": "sonata",
       "num": 1,
+      "key": "Fm",
       "audio": [
         "https://upload.wikimedia.org/wikipedia/commons/5/56/Piano_Sonata_N%C2%B0_1_-_1._Allegro_%28Beethoven%2C_Schnabel%29.ogg",
         "https://upload.wikimedia.org/wikipedia/commons/a/a0/Piano_Sonata_N%C2%B0_1_-_2._Adagio_%28Beethoven%2C_Schnabel%29.ogg",
@@ -16,7 +17,8 @@
     "beethoven-sonata-2": {
       "composer": "Beethoven",
       "type": "sonata",
-      "num": 2
+      "num": 2,
+      "key": "D"
     },
     "beethoven-sonata-3" : {
       "composer" : "Beethoven",
@@ -111,6 +113,7 @@
       "composer": "Chopin",
       "type": "nocturne",
       "num": 2,
+      "key": "Eb",
       "audio": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Frederic_Chopin_-_Nocturne_Eb_major_Opus_9%2C_number_2.ogg",
       "audio_credits": "Played by Martha Goldstein. Licensed under the CC BY-SA 2.0.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_-_Nocturne_Eb_major_Opus_9,_number_2.ogg"
