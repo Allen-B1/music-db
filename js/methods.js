@@ -47,8 +47,10 @@ var musicdb = (function() {
         if(typeof ret.audio === "string") {
           ret.audio = [ret.audio];
         }
-        if(ret.type === "sonata" && !ret.name) {
-          ret.name = "Piano Sonata";
+
+        var strings = {"sonata": "Piano Sonata", "nocturne": "Nocturne"};
+        if((ret.type === "sonata" || ret.type === "nocturne") && !ret.name) {
+          ret.name = strings[ret.type];
           if(typeof ret.num === "number") {
             ret.name += " No. " + ret.num;
           }

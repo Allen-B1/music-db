@@ -12,15 +12,6 @@ musicdb.list().then(function(list) {
         var content = document.getElementById("beethoven-sonata-content");
         content.parentNode.style.display = "block";
         content.appendChild(div);
-      } else {
-        if(data.name == null)
-          data.name = "Untitled";
-        div.appendChild(document.createTextNode(data.name));
-        div.classList.add("list-item");
-
-        var content = document.getElementById("content");
-        content.style.display = "block";
-        content.appendChild(div);
       }
     });
   });

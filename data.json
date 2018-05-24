@@ -105,6 +105,15 @@
       ],
       "audio_credits": "Played by Michael Hawley. Files courtesy of Musopen.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/Ludwig_van_Beethoven#Music"
+    },
+
+    "chopin-nocturne-2": {
+      "composer": "Chopin",
+      "type": "nocturne",
+      "num": 2,
+      "audio": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Frederic_Chopin_-_Nocturne_Eb_major_Opus_9%2C_number_2.ogg",
+      "audio_credits": "Played by Martha Goldstein. Licensed under the CC BY-SA 2.0.",
+      "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_-_Nocturne_Eb_major_Opus_9,_number_2.ogg"
     }
   }
 }
