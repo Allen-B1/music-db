@@ -52,10 +52,9 @@ if(id) {
         toolbar.style.background = "#607d8b";
          
         // change theme-color
-        var meta = document.createElement("meta");
-        meta.name = "theme-color";
-        meta.content = "#607d8b";
-        document.head.appendChild(meta);
+        var meta = document.head.querySelector("meta[name=theme-color]");
+        if(meta)
+          meta.content = "#607d8b";
       }
     }
   });
