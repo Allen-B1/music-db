@@ -46,6 +46,17 @@ if(id) {
         }
         audioBox.style.display = 'block';
       }
+
+      if(data.type === "nocturne") {
+        var toolbar = document.getElementById("toolbar");
+        toolbar.style.background = "#607d8b";
+         
+        // change theme-color
+        var meta = document.createElement("meta");
+        meta.name = "theme-color";
+        meta.content = "#607d8b";
+        document.head.appendChild(meta);
+      }
     }
   });
 }

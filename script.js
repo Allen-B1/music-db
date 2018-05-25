@@ -4,16 +4,18 @@ musicdb.list().then(function(list) {
     musicdb.get(id).then(function(data) {
       var div = document.createElement("a");
       div.href = "view.html?" + encodeURI(id);
+      if(data.name)
+        div.title = data.name;
+      div.classList.add("set-item");
 
       if(data.type === "sonata" && data.composer === "Beethoven") {
-        div.classList.add("composition");
         div.appendChild(document.createTextNode(data.num | 0));
 
         var content = document.getElementById("beethoven-sonata-content");
         content.parentNode.style.display = "block";
         content.appendChild(div);
       } else if(data.type === "nocturne" && data.composer === "Chopin") {
-        div.classList.add("composition");
+        div.classList.add("nocturne");
         div.appendChild(document.createTextNode(data.num | 0));
 
         var content = document.getElementById("chopin-nocturne-content");

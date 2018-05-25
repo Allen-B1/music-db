@@ -1,15 +1,22 @@
-.composition {
+.set-item {
   display: inline-block;
   padding: 16px;
-  background: #9c27b0;
+  background: #616161;
   color: #FFF;
   text-decoration: none !important;
   outline: 0;
   text-align: center;
   font-size: 16px;
 }
-.composition:hover, .composition:focus {
-  background: #7b1fa2;
+.set-item:hover, .set-item:focus {
+  background: #373737;
+}
+
+.nocturne {
+  background: #607d8b;
+}
+.nocturne:hover, .nocturne:focus {
+  background: #34515e;
 }
 
 .set-title {
