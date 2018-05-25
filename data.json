@@ -24,6 +24,7 @@
       "composer" : "Beethoven",
       "type": "sonata",
       "num": 3,
+      "key": "C",
       "audio": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Beethoven_Sonata_3_movement_1.ogg",
       "audio_credits": "Uploaded by UninvitedCompany. Licensed under CC BY 2.5.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Beethoven_Sonata_3_movement_1.ogg"
@@ -32,6 +33,7 @@
       "composer" : "Beethoven",
       "type": "sonata",
       "num": 4,
+      "key": "Eb",
       "nickname": "Grand Sonata",
       "audio": "https://upload.wikimedia.org/wikipedia/commons/2/21/Beethoven_Piano_Sonata_No_4_op_7_-_I_-_Allegro_molto_e_con_brio.ogg",
       "audio_credits": "Licensed under CC BY-SA 2.0.",
@@ -41,6 +43,8 @@
       "composer": "Beethoven",
       "type": "sonata",
       "num": 5,
+      "key": "Cm",
+
       "audio": ["http://piano-midi.de/ogg/beethoven/beethoven_opus10_1.ogg",
                "http://piano-midi.de/ogg/beethoven/beethoven_opus10_2.ogg",
                "http://piano-midi.de/ogg/beethoven/beethoven_opus10_3.ogg"],
@@ -51,6 +55,8 @@
       "composer" : "Beethoven",
       "type": "sonata",
       "num": 7,
+      "key": "D",
+
       "audio": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Piano_Sonata_No._7_%28Beethoven%29%2C_First_Movement.ogg",
       "audio_credits": "Created by La Pianista. Licensed under CC BY 3.0.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Piano_Sonata_No._7_(Beethoven),_First_Movement.ogg"
@@ -60,6 +66,8 @@
       "type": "sonata",
       "num": 8,
       "nickname" : "Pathétique",
+      "key": "Cm",
+
       "audio": [
         "https://upload.wikimedia.org/wikipedia/commons/2/26/Beethoven%2C_Sonata_No._8_in_C_Minor_Pathetique%2C_Op._13_-_I._Grave_-_Allegro_di_molto_e_con_brio.ogg",
         "https://upload.wikimedia.org/wikipedia/commons/6/63/Beethoven%2C_Sonata_No._8_in_C_Minor_Pathetique%2C_Op._13_-_II._Adagio_cantabile.ogg",
@@ -72,7 +80,9 @@
       "composer" : "Beethoven",
       "type": "sonata",
       "num": 14,
+      "key": "C#m",
       "nickname" : "Moonlight",
+
       "audio": [
         "https://upload.wikimedia.org/wikipedia/commons/e/eb/Beethoven_Moonlight_1st_movement.ogg",
         "https://upload.wikimedia.org/wikipedia/commons/4/47/Beethoven_Moonlight_2nd_movement.ogg",
@@ -85,7 +95,9 @@
       "composer" : "Beethoven",
       "type": "sonata",
       "num": 15,
+      "key": "D",
       "nickname" : "Pastorale",
+
       "audio" : [
         "https://upload.wikimedia.org/wikipedia/commons/5/54/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_i._allegro.ogg",
         "https://upload.wikimedia.org/wikipedia/commons/4/49/Ludwig_van_Beethoven_-_sonata_no._15_in_d_major%2C_op._28_%27pastorale%27_-_ii._andante.ogg",
@@ -99,6 +111,7 @@
       "composer": "Beethoven",
       "type": "sonata",
       "num": 21,
+      "key": "C",
       "nickname": "Waldstein",
       "audio": [
         "https://upload.wikimedia.org/wikipedia/commons/3/38/Ludwig_van_Beethoven_-_sonata_no._21_in_c_major_%27waldstein%27%2C_op._53_-_i._allegro_con_br.ogg",
@@ -107,6 +120,21 @@
       ],
       "audio_credits": "Played by Michael Hawley. Files courtesy of Musopen.",
       "audio_credits_link": "https://commons.wikimedia.org/wiki/Ludwig_van_Beethoven#Music"
+    },
+    "beethoven-sonata-23": {
+      "composer": "Beethoven",
+      "type": "sonata",
+      "num": 23,
+      "key": "Fm",
+      "movements": [
+        "Allegro assai",
+        "Andante con moto",
+        "Allegro ma con troppo"
+      ],
+      "nickname": "Appasionata",
+      "audio": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Beethoven_Sonata_op57_No23_Appassionata_Mvt1.ogg",
+      "audio_credits": "Played by Kristian Cvetković. Licensed under the CC BY-SA 2.5",
+      "audio_credits_link": "https://commons.wikimedia.org/wiki/File:Beethoven_Sonata_op57_No23_Appassionata_Mvt1.ogg"
     },
 
     "chopin-nocturne-2": {

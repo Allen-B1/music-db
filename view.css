@@ -23,6 +23,19 @@ main {
   font-size: 12px;
 }
 
+#mvmt-box {
+  margin-top: 16px;
+  display: none;
+}
+#mvmt-box h2 {
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.87);
+}
+#mvmt-list {
+  padding-left: 16px;
+  margin: 0;
+}
+
 @media screen and (max-width: 720px) {
   main {
     flex-direction: column;

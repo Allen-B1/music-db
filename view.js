@@ -16,10 +16,10 @@ if(id) {
         composerView.appendChild(document.createTextNode(data.composer));
         composerView.parentNode.style.display = "block";
       }
-      if(data.key != null) {     
+      if(data.key_long != null) {     
         var keyView = document.getElementById("key");
         keyView.innerHTML = "";
-        keyView.appendChild(document.createTextNode(data.key));
+        keyView.appendChild(document.createTextNode(data.key_long));
         keyView.parentNode.style.display = "block";
       }
       if(data.audio != null && data.audio.length) {
@@ -45,6 +45,16 @@ if(id) {
           audioBox.appendChild(creditsView);
         }
         audioBox.style.display = 'block';
+      }
+
+      if(data.movements instanceof Array) {
+        var movementsList = document.getElementById("mvmt-list");
+        movementsList.parentNode.style.display = "block";
+        for(var i = 0; i < data.movements.length; i++) {
+          var div = document.createElement("li");
+          div.appendChild(document.createTextNode(data.movements[i]));
+          movementsList.appendChild(div);
+        }
       }
 
       if(data.type === "nocturne") {

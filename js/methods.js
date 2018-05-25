@@ -58,6 +58,18 @@ var musicdb = (function() {
             ret.name += ' "' + ret.nickname + '"';
           }
         }
+
+        if(typeof ret.key === "string") {
+          var str = ret.key;
+          if(str.endsWith("m")) {
+            str = str.slice(0, -1);
+            str += " minor";
+          } else {
+            str += " major";
+          }
+          
+          ret.key_long = str;
+        }
         return ret;
       });
     else
