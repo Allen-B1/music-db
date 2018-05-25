@@ -12,6 +12,13 @@ musicdb.list().then(function(list) {
         var content = document.getElementById("beethoven-sonata-content");
         content.parentNode.style.display = "block";
         content.appendChild(div);
+      } else if(data.type === "nocturne" && data.composer === "Chopin") {
+        div.classList.add("composition");
+        div.appendChild(document.createTextNode(data.num | 0));
+
+        var content = document.getElementById("chopin-nocturne-content");
+        content.parentNode.style.display = "block";
+        content.appendChild(div);
       }
     });
   });
