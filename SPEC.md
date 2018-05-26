@@ -5,10 +5,15 @@ This spec is for `data.json`
 The data will have at its root a `compositions` key with its value being the list of compositions, each with an id.
 
 ### Composition
-Keys:
+**Keys**  
 `composer` (opt) - The composer  
 `type` (opt) - The type of composition. Possible values are `"sonata"`, `"nocturne"`, and `null`  
 `key` (opt) - The key of the composition. If exists should match `/[A-G](#|b)?m?/`  
+`name` (opt) - Name of composition
+
+`audio` - (opt) - Either an array of links to audio files or a string representing the link to an audio file
+`audio_credits` (opt) - Credits
+`audio_credits_link` (opt) - Link to source
 
 #### Sonatas
 The following properties are valid if `type` is `"sonata"`
