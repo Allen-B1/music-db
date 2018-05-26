@@ -52,7 +52,22 @@ if(id) {
         movementsList.parentNode.style.display = "block";
         for(var i = 0; i < data.movements.length; i++) {
           var div = document.createElement("li");
-          div.appendChild(document.createTextNode(data.movements[i]));
+          var mvmt = data.movements[i];
+          var labels = {"minuet": "Menuetto", "sonata": null,
+            "rondo": "Rondo",
+            "scherzo": "Scherzo"};
+
+
+          var str;
+          if(typeof mvmt === "string")
+            str = mvmt;
+          else {
+            if(labels[mvmt.form] != null) 
+              str = labels[mvmt.form] + ": " + mvmt.name;
+            else
+              str = mvmt.name;
+          }
+          div.appendChild(document.createTextNode(str));
           movementsList.appendChild(div);
         }
       }

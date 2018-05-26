@@ -5,6 +5,13 @@
       "type": "sonata",
       "num": 1,
       "key": "Fm",
+      "movements": [
+        {"form":"sonata","name":"Allegro"},
+        {"name":"Adagio"},
+        {"name":"Allegretto","form": "minuet"},
+        {"name":"Pretissimo"}
+      ],
+
       "audio": [
         "https://upload.wikimedia.org/wikipedia/commons/5/56/Piano_Sonata_N%C2%B0_1_-_1._Allegro_%28Beethoven%2C_Schnabel%29.ogg",
         "https://upload.wikimedia.org/wikipedia/commons/a/a0/Piano_Sonata_N%C2%B0_1_-_2._Adagio_%28Beethoven%2C_Schnabel%29.ogg",
@@ -18,7 +25,13 @@
       "composer": "Beethoven",
       "type": "sonata",
       "num": 2,
-      "key": "D"
+      "key": "D",
+      "movements": [
+        {"name":"Allegro vivace"},
+        {"name":"Largo appassionato"},
+        {"form": "scherzo", "name":"Allegretto"},
+        {"form": "rondo", "name":"Grazioso"}
+      ]
     },
     "beethoven-sonata-3" : {
       "composer" : "Beethoven",
@@ -127,9 +140,9 @@
       "num": 23,
       "key": "Fm",
       "movements": [
-        "Allegro assai",
-        "Andante con moto",
-        "Allegro ma con troppo"
+        {"name":"Allegro assai"},
+        {"name":"Andante con moto"},
+        {"name":"Allegro ma con troppo"}
       ],
       "nickname": "Appasionata",
       "audio": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Beethoven_Sonata_op57_No23_Appassionata_Mvt1.ogg",
