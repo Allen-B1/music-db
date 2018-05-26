@@ -114,24 +114,42 @@ a:hover, a:active, a:focus {
   border-bottom: 2px solid #2196f3;
 }
 
-button {
-  border: 0;
-  outline: 0;
-  color: #2196f3;
+button, .btn {
   background: transparent;
-  border-radius: 2px;
-  padding: 8px 16px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
+  border: 0;
+  border-radius: 2px;
+  text-align: center;
+  padding: 0 16px;
+  line-height: 36px;
+  height: 36px;
+  outline:0;
   cursor: pointer;
+  text-decoration: none;
+  color: #2196f3;
+  display: inline-block;
 }
-button:hover, button:focus {
+button:hover, button:focus, .btn:hover, .btn:focus {
   background: rgba(0,0,0,0.125);
 }
-button:active {
+button:active, .btn:active {
   background: rgba(0,0,0,0.2);
 }
-button:disabled {
+button:disabled, .btn:disabled {
   color: #AAA;
+}
+
+.btn.raised, button.raised {
+  background: #2196f3;
+  color: #FFF;
+}
+.btn.raised:hover, .btn.raised:focus, button.raised:hover, button.raised:focus {
+    box-shadow: 0 2px 4px rgba(153,153,153,0.7);
+}
+.btn.raised:active, button.raised:active {
+    box-shadow: 0 4px 8px rgba(153,153,153,0.7);
 }
 
 .horizontal-margin {
