@@ -59,14 +59,10 @@ if(id) {
 
 
           var str;
-          if(typeof mvmt === "string")
-            str = mvmt;
-          else {
-            if(labels[mvmt.form] != null) 
-              str = labels[mvmt.form] + ": " + mvmt.name;
-            else
-              str = mvmt.name;
-          }
+          if(labels[mvmt.form] != null) 
+            str = labels[mvmt.form] + ": " + mvmt.name;
+          else
+            str = mvmt.name;
           div.appendChild(document.createTextNode(str));
           movementsList.appendChild(div);
         }
