@@ -11,8 +11,8 @@ The data will have at its root a `compositions` key with its value being the lis
 `key` (opt) - The key of the composition. If exists should match `/[A-G](#|b)?m?/`  
 `name` (opt) - Name of composition
 
-`audio` - (opt) - Either an array of links to audio files or a string representing the link to an audio file
-`audio_credits` (opt) - Credits
+`audio` - (opt) - Either an array of links to audio files or a string representing the link to an audio file  
+`audio_credits` (opt) - Credits  
 `audio_credits_link` (opt) - Link to source
 
 #### Sonatas
